@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<!-- icons link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  crossorigin="anonymous"> 
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <title>Pokladňa</title>
+</head>
+<body>
+    <section id="pokladna">
+        <div class="container shadow">
+            <div class="row rowSt">
+                <p class="fw-bold pokT px-3">Zoznam objednaných produktov:</p>
+                <div class="col-10">
+                    <p class="ps-4 pt-4 fw-bold">Názov tovaru</p>    
+                </div>
+                <div class="col-2">
+                    <p class="fw-bold pt-4">Cena</p>
+                </div>
+            </div>
+
+            <div class="row rowNd mb-4">
+                <div class="col-10">
+                    <!-- nazov produktu -->
+                    <p class="ps-4 py-3">Becks detská postieľka Abeceda</p>        
+                </div>
+                <div class="col-2">
+                    <!-- cena -->
+                    <p class="py-3">102,50€</p>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <!-- vyber sposobu dopravy -->
+                <p class="fw-bold pokT px-3">Spôsob dopravy</p>
+                <p class="ps-3 pt-2">Vyberte si prosím preferovaný spôsob dopravy</p>
+                <div class="col-10">
+                    <p class="ps-4 fw-bold pt-2">Kuriér nad 20kg </p>
+                    <p class="ps-4"><span class="fw-bold">Doprava do Českej republiky</span> (In Time balík nad 25kg)</p>
+                </div>
+                <div class="col-2">
+                    <div class="form-check align-middle pt-2">
+                        <input class="form-check-input mt-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <p>14,90€</p>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input mt-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <p>15,60€</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <!-- vyber sposobu platby -->
+                <p class="fw-bold pokT px-3">Spôsob platby</p>
+                <p class="ps-3 pt-2">Vyberte prosím spôsob platby</p>
+                <div class="col-10">
+                    <p class="ps-4 fw-bold pt-2">Platba dobierkou</p>
+                    <p class="ps-4 fw-bold">Platba prevodom</p>
+                    <p class="ps-4">č.ú.: 14 7630 2009/1111, IBAN:SK26 1111 0000 0014 7630 2009, SWIFT:UNCRSKBX </p>
+                </div>
+                <div class="col-2">
+                    <div class="form-check align-middle pt-2">
+                        <input class="form-check-input mt-1" type="radio" name="flexRadioDefault2" id="flexRadioDefault3">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mt-2" type="radio" name="flexRadioDefault2" id="flexRadioDefault4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- platobna a dorucovacia adresa -->
+            <div class="row">
+                <p class="fw-bold pokT px-3 mt-5">Platobná a doručovacia adresa:</p>                
+                    <div class="col">
+                        <div class="input-group pt-3 ps-4">
+                            <label><p>Meno, Priezvisko</p></label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group ps-4">
+                            <label><p>E-mailová adresa</p></label>
+                            <input type="email">
+                        </div>
+                        <div class="input-group ps-4">
+                            <label><p>Ulica</p></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group pt-3 ps-4">
+                            <label><p>PSČ</p></label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group ps-4">
+                            <label><p>Mesto</p></label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group ps-4">
+                            <label><p>Telefón</p></label>
+                            <input type="text">
+                        </div>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p class="ps-4 pt-3">Napíšte komentár k tejto objednávke</p>
+                    <textarea class="ms-4 mt-3" name="comment" id="comment" cols="24" rows="4"></textarea>
+                </div>
+                <div class="col">
+                    <p class="pt-5 ps-4">Súhlasím s <a class="pe-1" href="/podmienky.html">podmienkami používania</a><input class="form-check-input" type="checkbox"></p>
+                    <!-- zavazne objednat s povinnostou platby -->
+                    <button class="ms-4 submit" type="submit">Záväzne objednať s povinnosťou platby</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap scripty -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script src="/scripts/scrolly.js"></script>
+</body>
+</html>

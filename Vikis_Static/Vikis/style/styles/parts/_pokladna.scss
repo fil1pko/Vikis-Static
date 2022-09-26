@@ -1,0 +1,88 @@
+#pokladna{
+    .container{
+        margin-top: 10px;
+        background-color: $container;
+        padding: 70px;
+        border-radius: 4px;
+        scale: 0.91;
+        p{
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-size: 17px;
+            // link na podmnienky css
+            a{
+                color: $navbar;
+                text-decoration: none;
+                transition: 0.5s;
+                &:hover{
+                    color: $Ahover;
+                }
+            }
+            // checkbox css
+            input{
+                color: $navbar;
+                box-shadow: none;
+                &:checked{
+                    background-color: $navbar;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+        .pokT{
+            background-color: $navbar;
+            color: $white;
+            border-radius: 4px;
+        }
+        .rowSt{
+            border-bottom: 2px solid $text;
+        }
+        .rowNd{
+            border-bottom: 1px solid $text;
+        }
+        input{
+            box-shadow: none;
+        }
+        .adresa{
+            flex-direction: column;
+        }
+        .input-group{
+            flex-direction: column;
+            input{
+                width: 400px;
+                display: inline-block;
+                border-radius: 5px;
+                padding: 0px 5px;
+                border: 2px solid $text;
+                background-color: $container;
+                font-size: 15px;
+                color: $text;
+                &:focus{
+                    outline: 2px solid $navbar;
+                    // wrong email or password outline: $log;
+                }
+            }
+        }
+        textarea{
+            border: 2px solid $text;
+            padding: 5px;
+            color: $text;
+            &:focus{
+                outline: 2px solid $navbar;
+            }
+        }
+        .submit{
+            background: none;
+            color: $text;
+            padding: 2px 10px 2px 10px;
+            border: 2px solid $text;
+            margin-top: 30px;
+            transition: 0.5s;
+            &:hover{
+                color: $Ahover;
+                border: 2px solid $Ahover;
+            }
+        }
+    }
+}

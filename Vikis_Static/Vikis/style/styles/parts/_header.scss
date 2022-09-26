@@ -1,0 +1,126 @@
+header{
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10%;
+	background-color: $navbar;
+	width: 100%;
+	transition: 0.6s; 
+	&:hover{
+		background-color: $navbar;
+		a{
+			opacity: 1;
+		}
+		form{
+			opacity: 1;
+		}
+	}
+	h3{
+		padding-left: 20px; 
+		letter-spacing: 2px;
+		margin-bottom: 0;
+		cursor: pointer;
+	}	
+	nav{
+		justify-content: center;
+		ul{
+			margin: 10px 0px 10px 0px;
+			list-style: none;
+			li{
+				padding: 0px 10px;
+				font-size: 17px;
+				display: inline-block;
+				.dropdown{
+					&:hover .dropdown-menu{
+						display: block;
+					}
+				}
+				.dropdown-menu{  
+					li{  
+						transition: 0.5s;
+						width: 100%;
+						a{
+						font-size: 16px;
+						color: $text;
+							&:hover{
+								border-radius: 0;
+							}
+						}
+					}
+				}
+				a{
+					padding: 5px 10px;
+					text-decoration: none;
+					color: $white;
+					opacity: 1;
+					&:hover{
+						border-radius: 40px;
+						background: $white;
+						cursor: pointer;
+						color: $Ahover;
+						transition: all 0.4s ease-in-out 0s;
+						opacity: 1;
+					}
+					&:is(:link, :active, :visited).active{
+						color: $Ahover;
+						background: $white;
+						border-radius: 40px;
+					}
+				}
+				form{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					max-width: 280px;
+					border: 1px solid $white;
+					border-radius: 50px;
+					background: transparent;
+					padding: 2px 10px;
+					.inputSearch{
+						width: 100%;
+						max-width: 230px;
+						background: transparent;
+						border: none;
+						font-size: 15px;
+						color: $white;
+						&:focus{
+							outline: none;
+						}
+					}
+					button{
+						width: 30px;
+						height: 30px;
+						border: none;
+						background-color: transparent;
+						&:hover{
+							transition: 0.3s ;
+							background-image: radial-gradient($Ahover, transparent );
+							border-radius: 50%;
+							box-shadow: 10px $black;
+						}
+						img{
+							width: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.sticky{
+	background-color: $navbarScroll;
+	a{
+		opacity: 0.4;
+	}
+	form{
+		opacity: 0.4;
+	}
+}
+
+.inputSearch::placeholder{
+	color: $white;
+	opacity: 1;	
+}

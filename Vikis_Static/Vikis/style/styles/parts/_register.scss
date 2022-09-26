@@ -1,0 +1,66 @@
+#register{
+    .reg{
+        font-size: 17px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        // width: 500px;
+        background-color: $container;
+        border-radius: 8px;
+        h4{
+            padding: 40px 0px 20px 0px;
+        }
+        h5{
+            font-size: 17px;
+            color: $text;
+        }
+        .log{
+            display: none;
+            font-size: 15px;
+        }
+        .formG{
+            flex-direction: column;
+            label{
+                color: $text;
+            }
+            input{
+                display: inline-block;
+                border-radius: 5px;
+                padding: 0px 5px;
+                border: 2px solid $text;
+                background-color: $container;
+                font-size: 15px;
+                color: $text;
+                &:focus{
+                    outline: 2px solid $navbar;
+                    // wrong email or password outline: $log;
+                }
+            }
+            span{
+                color: $text;
+                input{
+                    box-shadow: none;
+                }
+                input:checked{
+                    background-color: $navbar;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+        button{
+            background: none;
+            color: $text;
+            padding: 2px 10px 2px 10px;
+            border: 2px solid $text;
+            margin-bottom: 40px;
+            margin-top: 30px;
+            transition: 0.5s;
+            &:hover{
+                color: $Ahover;
+                border: 2px solid $Ahover;
+            }
+        }
+    }
+}

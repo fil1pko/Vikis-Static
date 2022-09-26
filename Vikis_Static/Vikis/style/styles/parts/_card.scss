@@ -1,0 +1,35 @@
+.card{
+    width: 290px;
+    border-radius: 0px;
+    &:hover{
+        text-decoration: none;
+        transition: all 0.5s ease 0s;
+        transform: scale(1.09);
+    }
+    img{
+        max-width: 290px;
+        height: 217px;
+    }
+    .card-tittle{
+        color: $text;
+        font-size: 19px;
+        padding-top: 8px;
+    }
+    .card-text{
+        color: $text;
+        font-size: 17px;
+        padding: 0px 0px 15px 0px;
+    }
+    .row2{
+        padding-top: 0px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+}
+
+.last{
+    padding-bottom: 80px;
+}
+.row2b{
+    margin-bottom: 31px;
+}

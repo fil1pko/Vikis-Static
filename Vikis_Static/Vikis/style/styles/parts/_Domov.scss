@@ -1,0 +1,77 @@
+.container-fluid{
+    background-color: $container;
+    height: 28px;
+    position: fixed;
+    z-index: 1001;
+    .breadcrumb{
+        left: 15.5%;
+        z-index: 100;
+        position: fixed;
+        li{
+            color: $text;
+            a{
+                color: $text;
+                text-decoration: none;
+                &:hover{
+                    color: $Ahover;
+                    transition: all 0.4s ease-in-out 0s;
+                }
+                &::after{
+                    content: '>';
+                    padding: 8px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+#domov .container{
+    background-color: $container;
+    padding: 20px;
+    margin-top: 70px;
+    h3{
+        color: $text;
+    }
+    .text-start{
+        font-size: 18px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 35px;
+    }  
+}
+
+h4{
+    padding: 70px 0px 20px 0px;
+    color: $text;
+    text-align: center;
+    font-size: 30px;
+}
+p{
+    color: $text;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+
+
+// .nextPrev{
+//     color: $white;
+//     width: 45px;
+//     height: 45px;
+//     border: none;
+//     border-radius: 50%;
+//     background-color: $navbar;
+//     &:hover{
+//         opacity: 0.80;
+//     }
+// }
+
+
+
+
+@media screen and (max-width: 1748px){
+    .container{
+        scale: 0.91;
+    }
+}

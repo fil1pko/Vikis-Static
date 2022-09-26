@@ -1,0 +1,98 @@
+    #kosik{
+        .container{
+            margin-top: 80px;
+            background-color: $container;
+            padding: 0px 0px 0px 0px;
+            border-radius: 4px;
+            p{
+                font-size: 17px;
+            }
+            h4{
+                padding: 30px 0px 10px 0px;
+                text-align: left;
+            }
+            h5{
+                padding-top: 20px;
+                color: $text;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            hr{
+                height: 2px;
+                background-color: $text;
+                width: 1230px;
+                opacity: 1;
+            }
+            .col-5{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-size: 17px;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .col-1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input{
+                    box-shadow: none;
+                    border: 1px solid $text;
+                }
+                input:checked{
+                    background-color: $navbar;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .col-2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+                input{
+                    display: inline-block;
+                    border-radius: 5px;
+                    padding: 0px 5px;
+                    border: 2px solid $text;
+                    background-color: $container;
+                    font-size: 15px;
+                    color: $text;
+                    &:focus{
+                        outline: 2px solid $navbar;
+                        // wrong email or password outline: $log;
+                    }
+                }
+            }
+
+            img{
+                max-width: 200px;
+                max-height: 200px;
+            }
+            .text{
+                width: 70px;
+            }
+            .kosikBtn{
+                background-color: $navbar;
+                padding: 8px 0px 8px 0px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    border: solid 2px;
+                    padding: 3px 6px;
+                    transition: all 0.4s ease-in-out 0s;
+                    margin: 0px 20px 0px 20px;
+                    &:hover{
+                        color: $Ahover;
+                    }
+                }
+            }
+        }
+    }

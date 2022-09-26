@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap'); 
+@import 'styles/techs/fonts';
+@import 'styles/techs/colors';
+@import 'styles/parts/header';
+@import 'styles/parts/Domov';
+@import 'styles/parts/footer';
+@import 'styles/parts/card';
+@import 'styles/parts/podmienky';
+@import 'styles/parts/card2';
+@import 'styles/parts/kolekcie';
+@import 'styles/parts/productDetail';
+@import 'styles/parts/pokladna';
+@import 'styles/parts/kosik';
+@import 'styles/parts/login';
+@import 'styles/parts/register';
+@import 'styles/parts/navstevnik';
+@import 'styles/parts/password';
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	font-family: $poppins;
+	body{
+		background-color: $bg;
+	}
+}
+
+

@@ -1,0 +1,65 @@
+#login{
+    .center{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 360px;
+        background-color: $container;
+        border-radius: 8px;
+        h4{
+            padding: 40px 0px 20px 0px;
+        }
+        .txt-field{
+            flex-direction: column;
+            label{
+                color: $text;
+            }
+            input{
+                display: inline-block;
+                border-radius: 5px;
+                padding: 0px 5px;
+                border: 2px solid $text;
+                background-color: $container;
+                font-size: 15px;
+                color: $text;
+                &:focus{
+                    outline: 2px solid $navbar;
+                    // wrong email or password outline: $log;
+                }
+                &::placeholder{
+                    font-size: 13px;
+                }
+            }
+            .log{
+                display: none;
+                font-size: 17px;
+                color: $log;
+            }
+        }
+        .pass{
+            font-size: 13px;
+            span a{
+                color: $navbar;
+                text-decoration: none;
+                transition: 0.5s;
+                &:hover{
+                    color: $Ahover;
+                }
+            }
+        }
+        button{
+            background: none;
+            color: $text;
+            padding: 2px 10px 2px 10px;
+            border: 2px solid $text;
+            margin-bottom: 40px;
+            margin-top: 30px;
+            transition: 0.5s;
+            &:hover{
+                color: $Ahover;
+                border: 2px solid $Ahover;
+            }
+        }
+    }
+}

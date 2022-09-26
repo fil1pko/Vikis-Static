@@ -1,0 +1,28 @@
+#navstevnik{
+    .container{
+        margin-top: 80px;
+        background-color: $container;
+        border-radius: 4px;
+        padding: 50px;
+        h4{
+            padding: 0px 0px 20px 0px;
+        }
+        p{
+            text-align: left;
+            padding: 0;
+            font-size: 17px;
+        }
+        a{
+            margin-top: 10px;
+            border: 2px solid $text;
+            color: $text;
+            text-decoration: none;
+            transition: 0.4s;
+            padding: 4px 7px;
+            &:hover{
+                color: $Ahover;
+                border: 2px solid $Ahover;
+            }
+        }
+    }
+}

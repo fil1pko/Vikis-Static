@@ -1,0 +1,48 @@
+footer{ 
+    margin-top: 100px;
+    background-color:  $text;
+    color: $footerText;
+    h5{
+        color: $white;
+        text-decoration: none;
+    } 
+    a{
+        color: $footerText;
+        text-decoration: none;
+    }
+}   
+
+.info{
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    .row{
+        padding-top: 30px;
+        .informacie a{
+            cursor: pointer;
+            &:hover{
+                color: $Ahover;
+            }
+        }
+        .informacie{
+            padding-top: 5px;
+            padding-bottom: 25px;
+        }
+        .soc{
+            display: flex;
+        }
+    }
+}
+
+.allrights{
+    background-color: $navbar;
+    margin-bottom: 0;
+    width: 100%;
+    p{
+        color: $white;
+        font-size: 13px;
+        margin-bottom: 0;
+        padding: 10px 0px 10px 0px;    
+    }
+}
